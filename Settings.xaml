@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle_Project.Settings"
+             Title="Settings"
+             BackgroundColor="Black">
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Grid>
+                    <Label Text="Settings"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White"
+                       FontSize="25"/>
+                </Grid>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Back_to_Game"
+                        Text="Back to Game"
+                        Clicked="Back_to_Game_Clicked"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        FontSize="20"/>
+            </HorizontalStackLayout>
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Label Text="Dark/Light Mode"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   FontSize="20"/>
+                    </Grid>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Button x:Name="Dark_Mode"
+                                    Clicked="Dark_Mode_Clicked"
+                                    Text="Dark Mode"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="Light_Mode"
+                                    Clicked="Light_Mode_Clicked"
+                                    Text="Light Mode"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="White"
+                                    TextColor="Black"/>
+                    </Grid>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Label Text="Font Size"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   FontSize="20"/>
+                    </Grid>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Button x:Name="Small"
+                                    Clicked="Small_Clicked"
+                                    Text="Small"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"
+                                    FontSize="10"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="Medium"
+                                    Clicked="Medium_Clicked"
+                                    Text="Medium"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"
+                                    FontSize="15"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="Large"
+                                    Clicked="Large_Clicked"
+                                    Text="Large"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"
+                                    FontSize="25"/>
+                    </Grid>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Label Text="Timer"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   FontSize="20"/>
+                    </Grid>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Button x:Name="Timer_On"
+                                    Clicked="Timer_On_Clicked"
+                                    Text="On"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="Timer_Off"
+                                    Clicked="Timer_Off_Clicked"
+                                    Text="Off"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Black"
+                                    TextColor="White"/>
+                    </Grid>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Label Text="Hints"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   FontSize="20"/>
+                    </Grid>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Grid>
+                        <Button x:Name="Hints_On"
+                                Clicked="Hints_On_Clicked"
+                                Text="On"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="Black"
+                                TextColor="White"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="Hints_Off"
+                                Clicked="Hints_Off_Clicked"
+                                Text="Off"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="Black"
+                                TextColor="White"/>
+                    </Grid>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
