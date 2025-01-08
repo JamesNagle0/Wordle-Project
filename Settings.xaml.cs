@@ -14,7 +14,7 @@ public partial class Settings : ContentPage
 
     private void Dark_Mode_Clicked(object sender, EventArgs e)
     {
-
+        
     }
 
     private void Light_Mode_Clicked(object sender, EventArgs e)

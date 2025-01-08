@@ -20,208 +20,733 @@
                        FontSize="20"/>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
-            <HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Word_Generator"
+                        HorizontalOptions="Center"
+                        Clicked="Word_Generator_Clicked"
+                        Text="Start Game"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        FontSize="20"/>
                 <Button x:Name="Settings"
+                        HorizontalOptions="End"
                         Text="⚙"
                         BackgroundColor="Black"
                         TextColor="White"
-                        FontSize="20"
+                        FontSize="25"
                         Clicked="Settings_Clicked"/>
             </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Button x:Name="Word_Generator"
-                        Clicked="Word_Generator_Clicked"
-                        Text="Start Game"
+            <HorizontalStackLayout>
+                <!-- <Label  x:Name="Debug1"
+                        Text=""
                         BackgroundColor="Black"
+                        TextColor="White"
+                        FontSize="25"/> -->
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Confirm"
+                        Clicked="Confirm_Clicked"
+                        Text="Press 'Start Game' to Begin!"
+                        BackgroundColor="Green"
                         TextColor="White"
                         FontSize="20"/>
             </HorizontalStackLayout>
             <Grid HorizontalOptions="Center"
                   VerticalOptions="Center"
-                  HeightRequest="660"
+                  HeightRequest="640"
                   WidthRequest="550"
                   RowDefinitions="100,100,100,100,100,100"
                   ColumnDefinitions="100,100,100,100,100">
-                <Border Grid.Row="0"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="0"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="0"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="0"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="0"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="1"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="1"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="1"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="1"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="1"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="2"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="2"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="2"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="2"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="2"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="3"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="3"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="3"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="3"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="3"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="4"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="4"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="4"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="4"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="4"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="5"
-                        Grid.Column="0"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="5"
-                        Grid.Column="1"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="5"
-                        Grid.Column="2"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="5"
-                        Grid.Column="3"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
-                <Border Grid.Row="5"
-                        Grid.Column="4"
-                        BackgroundColor="Black"
-                        Margin="10"
-                        Padding="10">
-                </Border>
+                <Frame x:Name="Frame1"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_1_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_1_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame2"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_1_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_1_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame3"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_1_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_1_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame4"
+                       Grid.Row="0"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_1_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_1_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame5"
+                       Grid.Row="0"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_1_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_1_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame6"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_2_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_2_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame7"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_2_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_2_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame8"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_2_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_2_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame9"
+                       Grid.Row="1"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_2_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_2_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame10"
+                       Grid.Row="1"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_2_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_2_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame11"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_3_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_3_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame12"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_3_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_3_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame13"
+                       Grid.Row="2"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_3_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_3_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame14"
+                       Grid.Row="2"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_3_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_3_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame15"
+                       Grid.Row="2"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_3_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_3_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame16"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_4_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_4_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame17"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_4_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_4_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame18"
+                       Grid.Row="3"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_4_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_4_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame19"
+                       Grid.Row="3"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_4_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_4_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame20"
+                       Grid.Row="3"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_4_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_4_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame21"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_5_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_5_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame22"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_5_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_5_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame23"
+                       Grid.Row="4"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_5_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_5_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame24"
+                       Grid.Row="4"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_5_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_5_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame25"
+                       Grid.Row="4"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_5_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_5_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame26"
+                       Grid.Row="5"
+                       Grid.Column="0"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_6_1"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_6_1"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame27"
+                       Grid.Row="5"
+                       Grid.Column="1"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_6_2"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_6_2"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame28"
+                       Grid.Row="5"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_6_3"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_6_3"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame29"
+                       Grid.Row="5"
+                       Grid.Column="3"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_6_4"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_6_4"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="Frame30"
+                       Grid.Row="5"
+                       Grid.Column="4"
+                       BackgroundColor="Black"
+                       Margin="10"
+                       Padding="10"
+                       CornerRadius="15"
+                       BorderColor="Gray">
+                    <StackLayout>
+                        <Entry Keyboard="Text"
+                               x:Name="Input_6_5"
+                               MaxLength="1"
+                               FontSize="30"
+                               TextTransform="Uppercase"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="Output_6_5"
+                               FontSize="40"
+                               IsVisible="False"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
             </Grid>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Label Text="Scoreboard"

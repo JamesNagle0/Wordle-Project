@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wordle_Project.Settings"
              Title="Settings"
-             BackgroundColor="Black">
+             BackgroundColor="Black"
+             x:Name="Settings_Page">
     <ScrollView>
         <VerticalStackLayout>
             <HorizontalStackLayout HorizontalOptions="Center">
