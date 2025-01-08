@@ -7,15 +7,18 @@
              x:Name="Settings_Page">
     <ScrollView>
         <VerticalStackLayout>
+            <!-- Title Block -->
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Grid>
-                    <Label Text="Settings"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       TextColor="White"
-                       FontSize="25"/>
+                    <Label x:Name="Settings_Label"
+                           Text="Settings"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="White"
+                           FontSize="25"/>
                 </Grid>
             </HorizontalStackLayout>
+            <!-- Button to go back to Game -->
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button x:Name="Back_to_Game"
                         Text="Back to Game"
@@ -24,139 +27,79 @@
                         TextColor="White"
                         FontSize="20"/>
             </HorizontalStackLayout>
+            <!-- Dark and Light mode buttons -->
             <VerticalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Grid>
                         <Label Text="Dark/Light Mode"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   TextColor="White"
-                                   FontSize="20"/>
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"/>
                     </Grid>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Grid>
                         <Button x:Name="Dark_Mode"
-                                    Clicked="Dark_Mode_Clicked"
-                                    Text="Dark Mode"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"/>
+                                Clicked="Dark_Mode_Clicked"
+                                Text="Dark Mode"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="Black"
+                                TextColor="White"/>
                     </Grid>
                     <Grid>
                         <Button x:Name="Light_Mode"
-                                    Clicked="Light_Mode_Clicked"
-                                    Text="Light Mode"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="White"
-                                    TextColor="Black"/>
+                                Clicked="Light_Mode_Clicked"
+                                Text="Light Mode"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="White"
+                                TextColor="Black"/>
                     </Grid>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
+            <!-- Font size buttons -->
             <VerticalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Grid>
                         <Label Text="Font Size"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   TextColor="White"
-                                   FontSize="20"/>
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"/>
                     </Grid>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Grid>
                         <Button x:Name="Small"
-                                    Clicked="Small_Clicked"
-                                    Text="Small"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"
-                                    FontSize="10"/>
+                                Clicked="Small_Clicked"
+                                Text="Small"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                FontSize="10"/>
                     </Grid>
                     <Grid>
                         <Button x:Name="Medium"
-                                    Clicked="Medium_Clicked"
-                                    Text="Medium"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"
-                                    FontSize="15"/>
+                                Clicked="Medium_Clicked"
+                                Text="Medium"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                FontSize="15"/>
                     </Grid>
                     <Grid>
                         <Button x:Name="Large"
-                                    Clicked="Large_Clicked"
-                                    Text="Large"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"
-                                    FontSize="25"/>
-                    </Grid>
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
-            <VerticalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Grid>
-                        <Label Text="Timer"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   TextColor="White"
-                                   FontSize="20"/>
-                    </Grid>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Grid>
-                        <Button x:Name="Timer_On"
-                                    Clicked="Timer_On_Clicked"
-                                    Text="On"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"/>
-                    </Grid>
-                    <Grid>
-                        <Button x:Name="Timer_Off"
-                                    Clicked="Timer_Off_Clicked"
-                                    Text="Off"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Black"
-                                    TextColor="White"/>
-                    </Grid>
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
-            <VerticalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Grid>
-                        <Label Text="Hints"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   TextColor="White"
-                                   FontSize="20"/>
-                    </Grid>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Grid>
-                        <Button x:Name="Hints_On"
-                                Clicked="Hints_On_Clicked"
-                                Text="On"
+                                Clicked="Large_Clicked"
+                                Text="Large"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
                                 BackgroundColor="Black"
-                                TextColor="White"/>
-                    </Grid>
-                    <Grid>
-                        <Button x:Name="Hints_Off"
-                                Clicked="Hints_Off_Clicked"
-                                Text="Off"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                BackgroundColor="Black"
-                                TextColor="White"/>
+                                TextColor="White"
+                                FontSize="25"/>
                     </Grid>
                 </HorizontalStackLayout>
             </VerticalStackLayout>

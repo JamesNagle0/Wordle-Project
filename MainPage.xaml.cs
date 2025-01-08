@@ -5,6 +5,7 @@ namespace Wordle_Project
 {
     public partial class MainPage : ContentPage
     {
+        //Declaring variables
         Random Random_Num = new Random();
         int Word_Gen;
         String Generated_Word = "";
@@ -14,6 +15,7 @@ namespace Wordle_Project
             InitializeComponent();
         }
 
+        //Array for each possible word to guess
         String[,] Possible_Words =
         {
             {"C", "L", "O", "S", "E"},
@@ -38,6 +40,7 @@ namespace Wordle_Project
             {"J", "U", "I", "C", "Y"}
         };
 
+        //Array for attempts at guessing the word
         String[,] Input_Words =
         {
             {"", "", "", "", ""},
@@ -48,16 +51,19 @@ namespace Wordle_Project
             {"", "", "", "", ""}
         };
 
+        //Array for the selected word to guess
         String[,] Word =
         {
             {"", "", "", "", ""}
         };
 
+        //Button for going to the settings page
         private async void Settings_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new Settings(), true);
         }
 
+        //button for starting the game and generating the word to guess
         private void Word_Generator_Clicked(object sender, EventArgs e)
         {
             if (Word_Generator.Text.Contains("Start Game"))
@@ -66,8 +72,10 @@ namespace Wordle_Project
 
                 Confirm.Text = "Confirm 1st Attempt";
 
+                //Pull a random numnber between 1 and 20
                 Word_Gen = Random_Num.Next(1, 21);
 
+                //Switch statement for each possible word
                 switch (Word_Gen)
                 {
                     case 1:
@@ -212,6 +220,7 @@ namespace Wordle_Project
                         break;
                 }
 
+                //Turn array of strings into a single string for debug
                 for (int i = 0; i < Word.GetLength(0); i++)
                 {
                     for (int j = 0; j < Word.GetLength(1); j++)
@@ -229,12 +238,14 @@ namespace Wordle_Project
 
         }
 
+        //Button to confirm your attempted guess at the word
         private void Confirm_Clicked(object sender, EventArgs e)
         {
             if (Confirm.Text.Contains("Confirm 1st Attempt"))
             {
                 Confirm.Text = "Confirm 2nd Attempt";
 
+                //For loop to transfer the strings from the entry boxes to the labels and swap the labels in for the entry boxes
                 for (int i = 1; i <= 5; i++)
                 {
                     var inputcontrol = (Entry)this.FindByName($"Input_1_{i}");
@@ -246,6 +257,7 @@ namespace Wordle_Project
                     outputcontrol.IsVisible = true;
                 }
 
+                //For loop to make the boxes change colour depending on how right or wrong you are
                 for (int i = 0; i <= 4; i++)
                 {
                     if (Input_Words[0, i] == Word[0, i])
@@ -268,6 +280,7 @@ namespace Wordle_Project
                     }
                 }
 
+                //End game if guessed correctly
                 if (Input_Words[0, 0] == Word[0, 0] && Input_Words[0, 1] == Word[0, 1] && Input_Words[0, 2] == Word[0, 2] && Input_Words[0, 3] == Word[0, 3] && Input_Words[0, 4] == Word[0, 4])
                 {
                     Win(sender, e);
@@ -483,12 +496,14 @@ namespace Wordle_Project
                     Win(sender, e);
                 }
             }
+            //Restart game if not guessed correctly
             else if (Confirm.Text.Contains("Restart") || Confirm.Text.Contains("You've Won! You Guessed the Word! (Press to Restart)"))
             {
                 Restart(sender, e);
             }
         }
 
+        //Method for reseting the game
         private void Restart(object sender, EventArgs e)
         {
             Word_Generator.Text = "Start Game";
@@ -526,6 +541,7 @@ namespace Wordle_Project
             }
         }
 
+        //Method for if the word is guessed correctly
         private void Win(object sender, EventArgs e)
         {
             Confirm.Text = "You've Won! You Guessed the Word! (Press to Restart)";
